@@ -62,7 +62,7 @@ insert into Film (tittle, description, release_year) values (
 );
 
 
-ALTER TABLE Actor
+ALTER TABLE Film
 ADD COLUMN last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
 
 CREATE TABLE Actor(
@@ -113,7 +113,7 @@ insert into Actor (first_name, last_name) values (
 );
 
 
-ALTER TABLE Film
+ALTER TABLE Actor
 ADD COLUMN last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
 
 CREATE TABLE FilmActor(
